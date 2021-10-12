@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hubmee</title>
+    <link rel="shortcut icon" href="./image/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+ 
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar__wrapper">
+            <div class="sidebar__logo-user">
+                <img src="./image/logo_profile.png" alt="">
+                <h4 >Profile</h4>
+            </div>
+            <div class="sidebar__navigation"> 
+                <div class="sidebar__navigation-content">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__list-item journal active-item"><a href="#">Journal</a></li>
+                        <li class="sidebar__list-item tasks"><a href="#">Tasks</a></li>
+                        <li class="sidebar__list-item personal"><a href="#">Personal Hub</a></li>
+                        <li class="sidebar__list-item network "><a href="#">Network</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar__navigation-feedback">
+                    <ul class="sidebar__list feedback-item">
+                        <li class="sidebar__list-item feedback"><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+      
+    </div>
+    <div class="main-content">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__journal">
+                    <h2 class="header__title">Journal</h2>
+                    <button class="header__journal-add"></button>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="user"><img src="./image/user.svg" alt=""></a>
+                        </li>
+                        <li class="menu__list-item new">
+                            <a href="#" class="user"><img src="./image/notification.svg" alt=""></a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="user"><img src="./image/charts.svg" alt=""></a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="user"><img src="./image/settings.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                
+            </div>
+        </header>
+
+        <main>
+            <section class="filters">
+               <div class="container">
+                <div class="filters__wrapper">
+                    <div class="filters__sync">
+                        <span class="filters__sync-logo">
+                            <a href="#"><h3>Google Sync</h3></a>
+                        </span>
+                        <button class="filters__btn active-btn">Filters</button>
+                    </div>
+                    <div class="filters__settings">
+                        <button class="filters__journal active-btn">
+                            Journal
+                        </button>
+                        <button class="filters__calendar">
+                            Calendar
+                        </button>
+
+                    </div>
+                </div>
+               </div>
+            </section>
+
+            <section class="sort">
+                <div class="container">
+                    <div class="sort__wrapper">
+
+                       <form class="sort__form">
+                           <fieldset  class="sort__form-item date">
+                               <legend>DATE</legend>
+                               <select  class="sort__date">
+                                   <option value="">14/05/2020</option>
+                                   <option value="">15/05/2020</option>
+                                   <option value="">16/05/2020</option>
+                               </select>
+                           </fieldset>
+
+                           <fieldset class="sort__form-item sort-by">
+                               <legend>SORT BY TYPE</legend>
+                               <select class="sort__by"  >
+                                   <option value="">All types</option>
+                                   <option value="">15/05/2020</option>
+                                   <option value="">16/05/2020</option>
+                               </select>
+                           </fieldset>
+
+                           <fieldset class="sort__form-item status">
+                               <legend>BY STATUS</legend>
+                               <select class="sort__status" name="" id="">
+                                   <option value="">All</option>
+                                   <option value="">15/05/2020</option>
+                                   <option value="">16/05/2020</option>
+                               </select>
+                           </fieldset>
+
+                           <fieldset class="sort__form-item categories">
+                               <legend>BY CATEGORIES</legend>
+                               <select class="sort__categ" name="" id="">
+                                   <option value="">Garage</option>
+                                   <option value="">15/05/2020</option>
+                                   <option value="">16/05/2020</option>
+                               </select>
+                           </fieldset>
+
+                           <fieldset class="sort__form-item by-items">
+                               <legend>BY ITEMS</legend>
+                               <select class="sort__items" name="" id="">
+                                   <option value="">Ford Mustang</option>
+                                   <option value="">15/05/2020</option>
+                                   <option value="">16/05/2020</option>
+                               </select>
+                           </fieldset>
+
+                           <fieldset class="sort__form-item infobox">
+                               <legend>BY INFOBOXES</legend>
+                               <select class="sort__infobox" name="" id="">
+                                   <option value="">Insurance Name In.....</option>
+                                   <option value="">15/05/2020</option>
+                                   <option value="">16/05/2020</option>
+                               </select>
+                           </fieldset>
+
+                       </form>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="day">
+                <div class="container">
+                    <div class="day__wrapper">
+                        <div class="day__today">
+                            <span class="day__title">
+                                <h3>Today is 25 March, 2021, Monday</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="task">
+                <div class="container">
+                    <div class="task__wrapper">
+                        <div class="task__items">
+                            <div class="task__item">
+                                <div class="task__time">
+                                    <h3 class="task__time-title">ALL DAY</h3>
+                                </div>
+                                <div class="task__type">
+                                       
+                                        <h3 class="task__type-title">Payment</h2>
+                                            <h4 class="task__type-subtitle">Garage service payment</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                 Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status">
+                                    <span class="task__status-title">Paid</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="task__item">
+                                <div class="task__time time-am ">
+                                    <h3 class="task__time-title time">05:30</h3>
+                                    <span>AM</span>
+                                </div>
+                                <div class="task__type am">
+                                       
+                                        <h3 class="task__type-title">Payment</h2>
+                                            <h4 class="task__type-subtitle">Room Cleaning</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                 Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status unpaid">
+                                    <span class="task__status-title">Unpaid</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="task__item">
+                                <div class="task__time time-am">
+                                    <h3 class="task__time-title time">05:30</h3>
+                                    <span>AM</span>
+                                </div>
+                                <div class="task__type to-do am">
+                                        <h3 class="task__type-title">Task</h2>
+                                            <h4 class="task__type-subtitle">Garage service payment</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status">
+                                    <span class="task__status-title todo-title">To Do</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="task__item">
+                                <div class="task__time">
+                                    <h3 class="task__time-title">ALL DAY</h3>
+                                </div>
+                                <div class="task__type">
+                                       
+                                        <h3 class="task__type-title">Payment</h2>
+                                            <h4 class="task__type-subtitle">Internet provider</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                 Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status">
+                                    <span class="task__status-title">Paid</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="task__item">
+                                <div class="task__time">
+                                    <h3 class="task__time-title">ALL DAY</h3>
+                                </div>
+                                <div class="task__type event">
+                                       
+                                        <h3 class="task__type-title">Event</h2>
+                                            <h4 class="task__type-subtitle">Birthday home party</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status answer">
+                                    <span class="task__status-title answer-title">No Answer</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="day day-2">
+                <div class="container">
+                    <div class="day__wrapper">
+                        <div class="day__today current-day">
+                            <span class="day__title">
+                                <h3>26 March, 2021</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="task task-2">
+                <div class="container">
+                    <div class="task__wrapper">
+                        <div class="task__items">
+                            <div class="task__item">
+                                <div class="task__time">
+                                    <h3 class="task__time-title">ALL DAY</h3>
+                                </div>
+                                <div class="task__type">
+                                       
+                                        <h3 class="task__type-title">Payment</h2>
+                                            <h4 class="task__type-subtitle">Garage service payment</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                 Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status">
+                                    <span class="task__status-title">Paid</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                           
+                            <div class="task__item">
+                                <div class="task__time">
+                                    <h3 class="task__time-title">ALL DAY</h3>
+                                </div>
+                                <div class="task__type to-do">
+                                        <h3 class="task__type-title">Task</h2>
+                                            <h4 class="task__type-subtitle">Garage service payment</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status">
+                                    <span class="task__status-title todo-title">To Do</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="task__item">
+                                <div class="task__time time-am">
+                                    <h3 class="task__time-title time">05:30</h3>
+                                    <span>AM</span>
+                                </div>
+                                <div class="task__type event am">
+                                       
+                                        <h3 class="task__type-title">Event</h2>
+                                            <h4 class="task__type-subtitle">Birthday home party</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status answer">
+                                    <span class="task__status-title answer-title">No Answer</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="task__item">
+                                <div class="task__time">
+                                    <h3 class="task__time-title">ALL DAY</h3>
+                                </div>
+                                <div class="task__type">
+                                       
+                                        <h3 class="task__type-title">Payment</h2>
+                                            <h4 class="task__type-subtitle">Room Cleaning</h4>
+                                            <p class="task__type-text">Garage service payment
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                 Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero
+                                            </p>   
+                                       
+                                </div>
+                                <div class="task__status unpaid">
+                                    <span class="task__status-title">Unpaid</span>
+                                </div>
+                                <div class="task__select">
+                                    <form>
+                                        <fieldset class="sort__form-item action">
+                                            <legend>ACTION</legend>
+                                            <select class="task__select-action">
+                                                <option value="">Select</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+
+    </div>
+    
+    
+</body>
+</html>
